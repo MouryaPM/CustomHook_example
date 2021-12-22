@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: #3f3f3f;
+}
+
+.app {
+  width: 90%;
+  max-width: 40rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 12px;
+  margin: 3rem auto;
+}
+.form-control {
+  margin-bottom: 1rem;
+}
+.form-control label,
+.form-control input {
+  display: block;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input {
+  font: inherit;
+  padding: 0.5rem;
+  width: 20rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  max-width: 100%;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: darkblue;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid darkblue;
+  border-radius: 6px;
+}
+
+.form-control.invalid input {
+  border: 2px solid red;
+}
+.form-control.invalid label {
+  color: red;
+}
+
+.error-text {
+  color: rgb(185, 40, 40);
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: #ccc;
+  color: black;
+  cursor: not-allowed;
+  border: #ccc;
+}
